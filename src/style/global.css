@@ -1,0 +1,207 @@
+:root {
+    --neutral-white: #fff;
+    --neutral-gray-high: #e8e8e8;
+    --neutral-gray: #e7e7e7;
+    --neutral-gray-low: #dbdbdb;
+    --primary-color: #F4D8CD;
+    --secondary-color: #9D69A3;
+    --secondary-color-low: #7b5280;
+    --tertiary-color: #2E6171;
+    --quartenary-color: #75BBA7;
+    --color-red: hwb(350 37% 9%);
+    --color-red-low: #c44f63;
+    --color-orange: #E17F24;
+    --color-orange-low: #c46e1e;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.btn, .cke_dialog_ui_button:not(span) {
+    background-color: var(--neutral-gray) !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    border: 1px solid var(--neutral-gray) !important;
+}
+
+    .btn:hover, .cke_dialog_ui_button:hover:not(span) {
+        background-color: var(--neutral-gray-low) !important;
+        border: 1px solid var(--neutral-gray-low) !important;
+    }
+
+    .btn:focus, .cke_dialog_ui_button:focus {
+        box-shadow: 0 0 0 0.25rem hsl(0, 0%, 91%);
+    }
+
+.cke_dialog_ui_button_ok span {
+    color: var(--neutral-white) !important;
+    background-color: transparent !important;
+}
+
+.btn-danger {
+    background: var(--color-red) !important;
+    color: var(--neutral-white) !important;
+}
+
+    .btn-danger:hover {
+        background: var(--color-red-low) !important;
+    }
+
+    .btn-danger:focus {
+        box-shadow: 0 0 0 0.25rem rgb(255, 200, 210);
+    }
+
+.btn-warning {
+    background: var(--color-orange) !important;
+    color: var(--neutral-white) !important;
+}
+
+    .btn-warning:hover {
+        background: var(--color-orange-low) !important;
+    }
+
+    .btn-warning:focus {
+        box-shadow: 0 0 0 0.25rem #ffdcbc;
+    }
+
+.modal-backdrop {  
+    display: none !important;    
+}
+
+.modal {
+  background-color: rgba(10,10,10,0.45) !important;
+}
+
+.modal-header button {
+    background: transparent;
+    border: none;
+}
+
+.navbar-toggler {
+    color: var(--neutral-white);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.primary, .cke_dialog_ui_button_ok:not(span) {
+    background-color: var(--secondary-color) !important;
+    background: var(--secondary-color) !important;
+    color: var(--neutral-white) !important;
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 5px !important;
+}
+
+    .primary:hover, .cke_dialog_ui_button_ok:hover:not(span) {
+        background-color: var(--secondary-color-low) !important;
+        background: var(--secondary-color-low) !important;
+        color: var(--neutral-white) !important;
+        border: 1px solid var(--secondary-color-low) !important;
+    }
+
+    .primary:focus, .cke_dialog_ui_button_ok:focus {
+        box-shadow: 0 0 0 0.25rem rgb(123, 82, 128, 45%) !important;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+h2, h4 {
+    color: var(--tertiary-color);
+}
+
+h4 {
+    
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+    a:hover {
+        color: inherit;
+    }
+
+input, select, textarea {
+    border-radius: 6px !important;
+    border: 1px solid var(--neutral-gray-low) !important;
+    padding: 5px !important;
+    margin-top: 5px !important;
+}
+
+.input-primary {
+    border-color: var(--secondary-color);
+}
+
+.back {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.post-content-page p {
+    margin-bottom: 2rem !important;
+}
+
+.post-content-page p, .post-content-page ul li {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: var(--neutral-white);
+    transition: all 0.4s;
+}
+
+    .nav-link:hover {
+        opacity: 0.8;
+        color: var(--neutral-white) !important;
+    }
+
+    .nav-link:active, .nav-link:focus {
+        color: var(--primary-color) !important;
+    }
+
+    .nav-link.active {
+        background-color: var(--neutral-white) !important;
+        color: var(--secondary-color) !important;
+    }
+
+.avatar-p, .avatar-pp {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-p {
+    width: 40px !important; 
+    height: 40px !important;
+}
+
+.avatar-pp {
+    width: 30px !important; 
+    height: 30px !important;
+}
